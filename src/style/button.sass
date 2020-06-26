@@ -1,38 +1,115 @@
 @import "color"
-    
+@import "typography"
+
 button
     display: flex
     justify-content: center
     align-items: center
-    font-size: 14px
-    line-height: 16px
+    width: auto
     padding: 8px 24px
     border: none
     background-color: transparent
     border-radius: 88rem
     transition: all .3s ease
+    cursor: pointer
+    position: relative
     &:hover
-        &span
-            transform: scale(0.5),transform 0.3s
-        cursor: pointer;
+        transform: scale(0.5),transform 0.3s
 
-.primary
+button.primary
     background-color: $theme-color
     color: $white-main
-    & :hover
+    &:hover
         background-color: $theme-color-hover
-    & :active
+    &:active
         background-color: $theme-color-active
 
-.secondary
+button.secondary
     background-color: transparent
     color: $theme-color
-    border: 1px solid inner $theme-color
+    border: 1px solid $theme-color
     &:hover
-        
+        background-color: rgba($theme-color,0.05)
+    &:active
+        background-color: rgba($theme-color,0.1)
 
-.lg
+button.secondary-light
+    background-color: transparent
+    color: $white-secondary
+    border: 1px solid $white-secondary
+    &:hover
+        background-color: $white-bg
+    &:active
+        background-color: $white-light-bg
+
+button.tertiary-light
+    background-color: transparent
+    color: $white-secondary
+    &:before
+        content: ''
+        position: absolute
+        left: center
+        top: center
+        width: 0
+        height: 0
+        background: red
+        border-radius: 88rem
+        z-index: 1
+        transition: all .6s ease
+        background-color: transparent
+
+    &:hover:before
+        width: 96px
+        height: 96px
+        background-color: $white-bg
+
+    &:active
+        background-color: $white-light-bg
+
+button.xl
+    height: 48px
+    @include text-16
+
+button.lg
     height: 40px
+    @include text-16
 
+button.md
+    height: 32px
+    @include text-14
 
+button.sm
+    height: 24px
+    @include text-12
 
+button.social-media
+    width: 96px
+    height: 96px
+    padding: 0
+    transition: all .3s ease
+    &:hover
+        &:after
+            transform: scale(1.1)
+    &:after
+        font-size: 48px
+        line-height: 48px
+
+button.social-media.linkedin
+    &:after
+        font-family: "Font Awesome 5 Brands"
+        content: "\f08c"
+        display: inline-flex
+        align-items: center
+        position: relative
+        transition: all .3s ease-in-out
+
+button.social-media.envelop
+    &:after
+        font-size: 48px
+        font-family: "Font Awesome 5 Free"
+        content: "\f0e0"
+        display: inline-flex
+        align-items: center
+        font-weight: 900
+        position: relative
+        transition: all .3s ease-in-out

@@ -10,11 +10,16 @@ class Button extends React.Component {
     }
 
     render() {
-        return <button className={this.props.className} style={this.props.style}>
+        return <a className="button-link" href={this.props.href} target={this.props.target}>
+            <button
+            className={this.props.className}
+            style={this.props.style}
+            title={this.props.title}>
             <span>
                 {this.props.text}
             </span>
-        </button>;
+        </button>
+        </a>;
     }
 
     componentDidMount() {

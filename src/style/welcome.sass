@@ -1,0 +1,83 @@
+@import color
+@import typography
+
+section
+    display: flex
+    min-width: 100vw
+    min-height: 100vh
+
+.hero-left
+    display: flex
+    min-width: 50%
+    min-height: 100%
+    background-color: $theme-color
+
+.hero-right
+    min-width: 50%
+    min-height: 100%
+    background-image: url('')
+    background: #FDB
+
+.content
+    color: $white
+
+.content-nav
+    display: block
+
+@media screen and ( max-width: 1440px )
+    .content
+        padding: 48px
+
+        h1
+            @include text-64
+
+        p
+            @include text-32
+            margin-top: 48px
+            max-width: 693px
+
+        .content-nav
+            margin-top: 32px
+            a
+                display: block
+                padding: 16px 0
+                margin-top: 32px
+
+        div.social-media
+            display: flex
+            margin-left: -24px
+            margin-top: 96px
+            *
+                margin-top: 0
+                &:first-child
+                    margin: 0
+
+@media screen and ( min-width: 1440px )
+    .content
+        padding: 96px
+
+        h1
+            @include text-96
+
+        p
+            @include text-40
+            margin-top: 32px
+            max-width: 693px
+
+        .content-nav
+            margin-top: 48px
+            a
+                display: block
+                padding: 16px 0
+                margin-top: 16px
+                &:first-child
+                    margin-top: 0
+
+        div.social-media
+            display: flex
+            margin-left: -24px
+            margin-top: 64px
+            *
+                margin-top: 0
+                &:first-child
+                    margin: 0

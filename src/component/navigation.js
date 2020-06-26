@@ -50,7 +50,7 @@ class Navigation extends React.Component {
                     <p className="title">Bruno.ink</p>
                 </div>
                 <div className="nav-action">
-                    <Button text="Contact Us" className="primary lg" style={{}}></Button>
+                    <Button text="Contact Us" className="button-primary button-lg" style={{}}></Button>
                 </div>
             </container>
         </header>

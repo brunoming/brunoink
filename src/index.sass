@@ -1,8 +1,8 @@
-@import "color"
+@import '../src/style/_color.sass'
   
 *:focus
   outline: none
-  box-shadow: 0 0 4px 0 $theme-color-focus
+  box-shadow: 0 0 0 4px $theme-color-focus
 
 
 @font-face
@@ -15,8 +15,14 @@ body
   font-family: 'OpenSans',-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen','Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',sans-serif
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
+  p,h1,h2,h3,h4,h5,h6
+    margin: 0
+    padding: 0
+    font-weight: 600
 
 
 code
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',monospace
 
+a
+  color: $white
