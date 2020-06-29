@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c0db2e6b5dd36234d7092149d78c7a70",
+    "revision": "7dc7f95a0a180eb9f6123f29f7105478",
     "url": "/brunoink/index.html"
   },
   {
-    "revision": "049254bf8920e5186c2e",
+    "revision": "1e57af974f12661612d8",
     "url": "/brunoink/static/css/2.ed41f9cb.chunk.css"
   },
   {
-    "revision": "3db32cf40ab6654e19a1",
-    "url": "/brunoink/static/css/main.1b940520.chunk.css"
+    "revision": "891dc224649bc73d6d43",
+    "url": "/brunoink/static/css/main.fab29624.chunk.css"
   },
   {
-    "revision": "049254bf8920e5186c2e",
-    "url": "/brunoink/static/js/2.ea2163e8.chunk.js"
+    "revision": "1e57af974f12661612d8",
+    "url": "/brunoink/static/js/2.eaf56dd3.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/brunoink/static/js/2.ea2163e8.chunk.js.LICENSE.txt"
+    "url": "/brunoink/static/js/2.eaf56dd3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3db32cf40ab6654e19a1",
-    "url": "/brunoink/static/js/main.dbab0bea.chunk.js"
+    "revision": "891dc224649bc73d6d43",
+    "url": "/brunoink/static/js/main.7506e3f9.chunk.js"
   },
   {
     "revision": "5b94cdd64704812b34ad",
