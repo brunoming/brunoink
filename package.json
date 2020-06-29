@@ -1,5 +1,5 @@
 {
-  "homepage": "http://brunoming.github.io/",
+  "homepage": "http://brunoming.github.io/brunoink",
   "name": "brunoink",
   "version": "0.1.0",
   "private": false,
@@ -75,7 +75,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build" 
   },
   "eslintConfig": {
     "extends": "react-app"
