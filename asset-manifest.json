@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/brunoink/static/css/main.44a4eafb.chunk.css",
+    "main.js": "/brunoink/static/js/main.3ed84f46.chunk.js",
+    "main.js.map": "/brunoink/static/js/main.3ed84f46.chunk.js.map",
+    "runtime-main.js": "/brunoink/static/js/runtime-main.c8a6437c.js",
+    "runtime-main.js.map": "/brunoink/static/js/runtime-main.c8a6437c.js.map",
+    "static/css/2.4707e12a.chunk.css": "/brunoink/static/css/2.4707e12a.chunk.css",
+    "static/js/2.73159451.chunk.js": "/brunoink/static/js/2.73159451.chunk.js",
+    "static/js/2.73159451.chunk.js.map": "/brunoink/static/js/2.73159451.chunk.js.map",
+    "index.html": "/brunoink/index.html",
+    "precache-manifest.3359fc835e84682169367edc5b222c95.js": "/brunoink/precache-manifest.3359fc835e84682169367edc5b222c95.js",
+    "service-worker.js": "/brunoink/service-worker.js",
+    "static/css/2.4707e12a.chunk.css.map": "/brunoink/static/css/2.4707e12a.chunk.css.map",
+    "static/css/main.44a4eafb.chunk.css.map": "/brunoink/static/css/main.44a4eafb.chunk.css.map",
+    "static/js/2.73159451.chunk.js.LICENSE.txt": "/brunoink/static/js/2.73159451.chunk.js.LICENSE.txt",
+    "static/media/index.sass": "/brunoink/static/media/Lobster-Regular.9406d0ab.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c8a6437c.js",
+    "static/css/2.4707e12a.chunk.css",
+    "static/js/2.73159451.chunk.js",
+    "static/css/main.44a4eafb.chunk.css",
+    "static/js/main.3ed84f46.chunk.js"
+  ]
+}
