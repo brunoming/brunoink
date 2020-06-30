@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9f1e7e3580e932be1ecea478bdf56a55",
+    "revision": "5e11c76e2a1010cbed871ba083d6203d",
     "url": "/brunoink/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/brunoink/static/css/2.ed41f9cb.chunk.css"
   },
   {
-    "revision": "5f1f121649b0bd3b28b9",
-    "url": "/brunoink/static/css/main.1da813a9.chunk.css"
+    "revision": "3bf74a5976c04d4aa1cc",
+    "url": "/brunoink/static/css/main.f508974f.chunk.css"
   },
   {
     "revision": "1e57af974f12661612d8",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/brunoink/static/js/2.eaf56dd3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5f1f121649b0bd3b28b9",
-    "url": "/brunoink/static/js/main.15e80288.chunk.js"
+    "revision": "3bf74a5976c04d4aa1cc",
+    "url": "/brunoink/static/js/main.c04eac25.chunk.js"
   },
   {
     "revision": "5b94cdd64704812b34ad",
