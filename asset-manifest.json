@@ -1,27 +1,28 @@
 {
   "files": {
     "main.css": "/brunoink/static/css/main.d2db7a6d.chunk.css",
-    "main.js": "/brunoink/static/js/main.680cd665.chunk.js",
-    "main.js.map": "/brunoink/static/js/main.680cd665.chunk.js.map",
+    "main.js": "/brunoink/static/js/main.35b0673d.chunk.js",
+    "main.js.map": "/brunoink/static/js/main.35b0673d.chunk.js.map",
     "runtime-main.js": "/brunoink/static/js/runtime-main.c8a6437c.js",
     "runtime-main.js.map": "/brunoink/static/js/runtime-main.c8a6437c.js.map",
-    "static/css/2.ed41f9cb.chunk.css": "/brunoink/static/css/2.ed41f9cb.chunk.css",
-    "static/js/2.eaf56dd3.chunk.js": "/brunoink/static/js/2.eaf56dd3.chunk.js",
-    "static/js/2.eaf56dd3.chunk.js.map": "/brunoink/static/js/2.eaf56dd3.chunk.js.map",
+    "static/css/2.7c99997a.chunk.css": "/brunoink/static/css/2.7c99997a.chunk.css",
+    "static/js/2.d118386e.chunk.js": "/brunoink/static/js/2.d118386e.chunk.js",
+    "static/js/2.d118386e.chunk.js.map": "/brunoink/static/js/2.d118386e.chunk.js.map",
     "index.html": "/brunoink/index.html",
-    "precache-manifest.6b702d2b67a3a7641abee7fea8bad758.js": "/brunoink/precache-manifest.6b702d2b67a3a7641abee7fea8bad758.js",
+    "precache-manifest.e634e36bbc61d49f18ee6b141d21bb45.js": "/brunoink/precache-manifest.e634e36bbc61d49f18ee6b141d21bb45.js",
     "service-worker.js": "/brunoink/service-worker.js",
-    "static/css/2.ed41f9cb.chunk.css.map": "/brunoink/static/css/2.ed41f9cb.chunk.css.map",
+    "static/css/2.7c99997a.chunk.css.map": "/brunoink/static/css/2.7c99997a.chunk.css.map",
     "static/css/main.d2db7a6d.chunk.css.map": "/brunoink/static/css/main.d2db7a6d.chunk.css.map",
-    "static/js/2.eaf56dd3.chunk.js.LICENSE.txt": "/brunoink/static/js/2.eaf56dd3.chunk.js.LICENSE.txt",
+    "static/js/2.d118386e.chunk.js.LICENSE.txt": "/brunoink/static/js/2.d118386e.chunk.js.LICENSE.txt",
     "static/media/index.sass": "/brunoink/static/media/Lobster-Regular.9406d0ab.ttf",
+    "static/media/all.css": "/brunoink/static/media/fa-solid-900.f3a7d3b5.woff",
     "static/media/welcome.sass": "/brunoink/static/media/welcome-bg-3.e0562cdd.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.c8a6437c.js",
-    "static/css/2.ed41f9cb.chunk.css",
-    "static/js/2.eaf56dd3.chunk.js",
+    "static/css/2.7c99997a.chunk.css",
+    "static/js/2.d118386e.chunk.js",
     "static/css/main.d2db7a6d.chunk.css",
-    "static/js/main.680cd665.chunk.js"
+    "static/js/main.35b0673d.chunk.js"
   ]
 }
