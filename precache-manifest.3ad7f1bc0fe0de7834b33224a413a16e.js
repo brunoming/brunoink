@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c306e1c7ba1efb435b95aa59b7230ba1",
+    "revision": "abec5eb94c240f729c7969ccb20a5e7d",
     "url": "/brunoink/index.html"
   },
   {
-    "revision": "874c47ed126ee3b9fd51",
+    "revision": "bb2810b9520550fc7871",
     "url": "/brunoink/static/css/2.d6881df9.chunk.css"
   },
   {
-    "revision": "4f6b58dc9a0c420a53b2",
-    "url": "/brunoink/static/css/main.fd9df0b3.chunk.css"
+    "revision": "8211d4dfa39c28f38ded",
+    "url": "/brunoink/static/css/main.8972b513.chunk.css"
   },
   {
-    "revision": "874c47ed126ee3b9fd51",
-    "url": "/brunoink/static/js/2.50cd3b80.chunk.js"
+    "revision": "bb2810b9520550fc7871",
+    "url": "/brunoink/static/js/2.8ed57486.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/brunoink/static/js/2.50cd3b80.chunk.js.LICENSE.txt"
+    "url": "/brunoink/static/js/2.8ed57486.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4f6b58dc9a0c420a53b2",
-    "url": "/brunoink/static/js/main.1ef907a4.chunk.js"
+    "revision": "8211d4dfa39c28f38ded",
+    "url": "/brunoink/static/js/main.bf1a5bf5.chunk.js"
   },
   {
     "revision": "5b94cdd64704812b34ad",
@@ -86,6 +86,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f3a7d3b5880544a91e9a7e6f8f35d4d2",
     "url": "/brunoink/static/media/fa-solid-900.f3a7d3b5.woff"
+  },
+  {
+    "revision": "e52d0cb524cb8a08bba02ee68231e212",
+    "url": "/brunoink/static/media/wechat-qrcode.e52d0cb5.png"
   },
   {
     "revision": "8d9d3c7454206910d662310873b929b9",

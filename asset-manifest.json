@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "/brunoink/static/css/main.fd9df0b3.chunk.css",
-    "main.js": "/brunoink/static/js/main.1ef907a4.chunk.js",
-    "main.js.map": "/brunoink/static/js/main.1ef907a4.chunk.js.map",
+    "main.css": "/brunoink/static/css/main.8972b513.chunk.css",
+    "main.js": "/brunoink/static/js/main.bf1a5bf5.chunk.js",
+    "main.js.map": "/brunoink/static/js/main.bf1a5bf5.chunk.js.map",
     "runtime-main.js": "/brunoink/static/js/runtime-main.c8a6437c.js",
     "runtime-main.js.map": "/brunoink/static/js/runtime-main.c8a6437c.js.map",
     "static/css/2.d6881df9.chunk.css": "/brunoink/static/css/2.d6881df9.chunk.css",
-    "static/js/2.50cd3b80.chunk.js": "/brunoink/static/js/2.50cd3b80.chunk.js",
-    "static/js/2.50cd3b80.chunk.js.map": "/brunoink/static/js/2.50cd3b80.chunk.js.map",
+    "static/js/2.8ed57486.chunk.js": "/brunoink/static/js/2.8ed57486.chunk.js",
+    "static/js/2.8ed57486.chunk.js.map": "/brunoink/static/js/2.8ed57486.chunk.js.map",
     "index.html": "/brunoink/index.html",
-    "precache-manifest.7ed1423b9f418926605f3f915bcd0240.js": "/brunoink/precache-manifest.7ed1423b9f418926605f3f915bcd0240.js",
+    "precache-manifest.3ad7f1bc0fe0de7834b33224a413a16e.js": "/brunoink/precache-manifest.3ad7f1bc0fe0de7834b33224a413a16e.js",
     "service-worker.js": "/brunoink/service-worker.js",
     "static/css/2.d6881df9.chunk.css.map": "/brunoink/static/css/2.d6881df9.chunk.css.map",
-    "static/css/main.fd9df0b3.chunk.css.map": "/brunoink/static/css/main.fd9df0b3.chunk.css.map",
-    "static/js/2.50cd3b80.chunk.js.LICENSE.txt": "/brunoink/static/js/2.50cd3b80.chunk.js.LICENSE.txt",
+    "static/css/main.8972b513.chunk.css.map": "/brunoink/static/css/main.8972b513.chunk.css.map",
+    "static/js/2.8ed57486.chunk.js.LICENSE.txt": "/brunoink/static/js/2.8ed57486.chunk.js.LICENSE.txt",
     "static/media/all.css": "/brunoink/static/media/fa-solid-900.f3a7d3b5.woff",
+    "static/media/wechat-qrcode.sass": "/brunoink/static/media/wechat-qrcode.e52d0cb5.png",
     "static/media/indexSlider.sass": "/brunoink/static/media/welcome-bg-3.e0562cdd.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.c8a6437c.js",
     "static/css/2.d6881df9.chunk.css",
-    "static/js/2.50cd3b80.chunk.js",
-    "static/css/main.fd9df0b3.chunk.css",
-    "static/js/main.1ef907a4.chunk.js"
+    "static/js/2.8ed57486.chunk.js",
+    "static/css/main.8972b513.chunk.css",
+    "static/js/main.bf1a5bf5.chunk.js"
   ]
 }
