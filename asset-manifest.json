@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/brunoink/static/css/main.f508974f.chunk.css",
-    "main.js": "/brunoink/static/js/main.c04eac25.chunk.js",
-    "main.js.map": "/brunoink/static/js/main.c04eac25.chunk.js.map",
+    "main.css": "/brunoink/static/css/main.d2db7a6d.chunk.css",
+    "main.js": "/brunoink/static/js/main.680cd665.chunk.js",
+    "main.js.map": "/brunoink/static/js/main.680cd665.chunk.js.map",
     "runtime-main.js": "/brunoink/static/js/runtime-main.c8a6437c.js",
     "runtime-main.js.map": "/brunoink/static/js/runtime-main.c8a6437c.js.map",
     "static/css/2.ed41f9cb.chunk.css": "/brunoink/static/css/2.ed41f9cb.chunk.css",
     "static/js/2.eaf56dd3.chunk.js": "/brunoink/static/js/2.eaf56dd3.chunk.js",
     "static/js/2.eaf56dd3.chunk.js.map": "/brunoink/static/js/2.eaf56dd3.chunk.js.map",
     "index.html": "/brunoink/index.html",
-    "precache-manifest.ef1de7c75fbcbeaab082486ec4ffd69b.js": "/brunoink/precache-manifest.ef1de7c75fbcbeaab082486ec4ffd69b.js",
+    "precache-manifest.6b702d2b67a3a7641abee7fea8bad758.js": "/brunoink/precache-manifest.6b702d2b67a3a7641abee7fea8bad758.js",
     "service-worker.js": "/brunoink/service-worker.js",
     "static/css/2.ed41f9cb.chunk.css.map": "/brunoink/static/css/2.ed41f9cb.chunk.css.map",
-    "static/css/main.f508974f.chunk.css.map": "/brunoink/static/css/main.f508974f.chunk.css.map",
+    "static/css/main.d2db7a6d.chunk.css.map": "/brunoink/static/css/main.d2db7a6d.chunk.css.map",
     "static/js/2.eaf56dd3.chunk.js.LICENSE.txt": "/brunoink/static/js/2.eaf56dd3.chunk.js.LICENSE.txt",
     "static/media/index.sass": "/brunoink/static/media/Lobster-Regular.9406d0ab.ttf",
     "static/media/welcome.sass": "/brunoink/static/media/welcome-bg-3.e0562cdd.jpg"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.c8a6437c.js",
     "static/css/2.ed41f9cb.chunk.css",
     "static/js/2.eaf56dd3.chunk.js",
-    "static/css/main.f508974f.chunk.css",
-    "static/js/main.c04eac25.chunk.js"
+    "static/css/main.d2db7a6d.chunk.css",
+    "static/js/main.680cd665.chunk.js"
   ]
 }
