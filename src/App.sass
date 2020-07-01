@@ -1,0 +1,62 @@
+@import "./style/_color"
+@import "./style/_typography"
+    
+main
+    display: flex
+    min-width: 100vw
+    min-height: 100vh
+
+.app-left
+    display: flex
+    flex: 1
+    min-width: 40vw
+    min-height: 100vh
+    background-color: $theme-color
+
+.app-right
+    min-width: 60vw
+    height: 100vh
+    overflow: scroll
+    position: sticky
+    top: 0
+    background-color: $theme-color
+
+@media screen and ( max-width: 734px ) and (min-width: 0px) // 移动端
+
+    .app-right
+        display: none
+
+    .content
+        padding: 48px 32px
+
+        .content-nav
+            margin-top: 32px
+            a
+                @include text-32
+                max-width: 100%
+                display: block
+                padding: 16px 0
+
+
+@media screen and ( max-width: 1440px ) and ( min-width: 735px ) // 小屏电脑
+    .content
+        padding: 48px
+
+        .content-nav
+            margin-top: 32px
+            a
+                @include text-24
+                display: block
+                padding: 16px 0
+
+@media screen and ( min-width: 1440px ) // 大屏电脑
+    .content
+        padding: 96px
+
+        .content-nav
+            margin-top: 48px
+            a
+                display: block
+                padding: 16px 0
+                &:first-child
+                    margin-top: 0

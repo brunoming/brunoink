@@ -1,0 +1,24 @@
+@import typography
+@import color
+
+a.backindex
+    text-decoration: none
+    font-weight: 600
+    @include text-32
+    &:before
+        font-family: "Font Awesome 5 Free"
+        content: "\f104"
+        display: inline-flex
+        align-items: center
+        font-weight: 900
+        position: relative
+        right: 16px
+        padding-left: 24px
+        transition: all .3s ease-in-out
+    &::after
+        display: none
+    &:hover
+        &:before
+            right: 24px
+    &:active
+        opacity: 0.9

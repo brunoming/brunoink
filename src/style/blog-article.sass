@@ -1,0 +1,38 @@
+@import color
+@import typography
+
+.blog-article
+    width: 100%
+    min-height: 100%
+    color: $white-main
+    background-color: $grey-9
+    box-shadow: -1px 0 0 0 $white-divider
+
+.blog-article-container
+    width: auto
+    margin: 0 64px
+    padding: 64px 0 96px 0
+
+    h1
+        @include text-48
+
+    h2
+        @include text-40
+    
+    h3
+        @include text-32
+
+    h4
+        @include text-24
+
+    p
+        margin-top: 16px
+        @include text-20
+        color: $white-secondary
+
+    *
+        margin-top: 24px
+
+    &:first-child
+        margin-top: 0
+

@@ -1,0 +1,44 @@
+@import typography
+@import color
+
+.blog-content
+    width: 100%
+    height: min-content
+    margin: 48px 0 0 0
+    padding: 0
+    
+.blog-list
+    list-style: none
+    position: relative
+    left: -24px
+    width: 100%
+    padding: 24px
+    transition: all .3s ease
+    border-radius: 16px
+    cursor: pointer
+
+    .blog-list-headline
+        @include text-32
+
+    .blog-list-date
+        color: $white-tertiary
+        margin-top: 8px
+        @include text-16
+
+    &:hover
+        background-color: $white-bg
+
+    &:active
+        background-color: $white-divider
+
+@media screen and (max-width:735px)
+    .blog-content
+        margin-top: 32px
+
+    .blog-list
+        left: -16px
+        width: 100%
+        padding: 16px 16px
+        
+        .blog-list-headline
+            @include text-24

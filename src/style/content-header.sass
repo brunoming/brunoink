@@ -1,0 +1,14 @@
+@import typography
+@import color
+    
+@media screen and ( max-width: 734px ) and (min-width: 0px) // 移动端
+    header
+        h1
+            @include text-48
+            margin-top: 16px
+
+@media screen and ( min-width: 735px ) // pc端
+    header
+        h1
+            @include text-64
+            margin-top: 24px

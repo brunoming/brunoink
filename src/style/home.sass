@@ -1,0 +1,105 @@
+@import typography
+@import color
+    
+.content
+    width: 100%
+    color: $white
+
+.content-nav
+    display: block
+
+span.sub
+    color: $white-tertiary
+
+
+@media screen and ( max-width: 734px ) and (min-width: 0px) // 移动端
+
+    .content
+
+        h1.welcome-headline
+            @include text-64
+
+        p.welcome-description
+            @include text-32
+            margin-top: 32px
+
+        .content-nav
+            margin-top: 32px
+            a
+                @include text-32
+                max-width: 100%
+                display: block
+                padding: 16px 0
+
+        div.social-media
+            display: flex
+            margin-left: -24px
+            margin-top: 48px
+            *
+                margin-top: 0
+                &:first-child
+                    margin: 0
+
+
+@media screen and ( max-width: 1440px ) and ( min-width: 735px ) // 小屏电脑
+    .content
+
+        h1.welcome-headline
+            @include text-64
+
+        p.welcome-description
+            @include text-32
+            margin-top: 32px
+
+        .content-nav
+            margin-top: 32px
+            a
+                @include text-24
+                display: block
+                padding: 16px 0
+
+        div.social-media
+            display: flex
+            margin-left: -16px
+            margin-top: 32px
+            *
+                margin-top: 0
+                margin-left: 16px
+                &:first-child
+                    margin: 0
+                button
+                    width: 64px
+                    height: 64px
+                    &::after
+                        font-size: 40px
+                        line-height: 40px
+                    &::before:hover
+                        width: 64px
+                        height: 64px
+
+@media screen and ( min-width: 1440px ) // 大屏电脑
+    .content
+
+        h1.welcome-headline
+            @include text-96
+
+        p.welcome-description
+            @include text-40
+            margin-top: 32px
+
+        .content-nav
+            margin-top: 48px
+            a
+                display: block
+                padding: 16px 0
+                &:first-child
+                    margin-top: 0
+
+        div.social-media
+            display: flex
+            margin-left: -24px
+            margin-top: 64px
+            *
+                margin-top: 0
+                &:first-child
+                    margin: 0

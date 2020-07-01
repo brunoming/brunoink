@@ -1,75 +1,123 @@
 @import color
 @import typography
 
-section
+main
     display: flex
     min-width: 100vw
     min-height: 100vh
 
-.hero-left
+.app-left
     display: flex
-    min-width: 50%
-    min-height: 100%
+    flex: 1
+    min-width: 40vw
+    min-height: 100vh
     background-color: $theme-color
 
-.hero-right
-    min-width: 50%
-    min-height: 100%
-    background-image: url('')
-    background: #FDB
+.app-right
+    min-width: 60vw
+    height: 100vh
+    overflow: scroll
+    position: sticky
+    top: 0
+    background-color: $theme-color
 
 .content
+    width: 100%
     color: $white
 
 .content-nav
     display: block
 
-@media screen and ( max-width: 1440px )
-    .content
-        padding: 48px
+span.sub
+    color: $white-tertiary
 
-        h1
+@media screen and ( max-width: 734px ) and (min-width: 0px) // 移动端
+
+    .app-right
+        display: none
+
+    .content
+        padding: 48px 24px
+
+        h1.welcome-headline
             @include text-64
 
-        p
+        p.welcome-description
             @include text-32
-            margin-top: 48px
-            max-width: 693px
+            margin-top: 32px
 
         .content-nav
             margin-top: 32px
             a
+                @include text-32
+                max-width: 100%
                 display: block
                 padding: 16px 0
-                margin-top: 32px
 
         div.social-media
             display: flex
             margin-left: -24px
-            margin-top: 96px
+            margin-top: 48px
             *
                 margin-top: 0
                 &:first-child
                     margin: 0
 
-@media screen and ( min-width: 1440px )
+
+
+@media screen and ( max-width: 1440px ) and ( min-width: 735px ) // 小屏电脑
+    .content
+        padding: 48px
+
+        h1.welcome-headline
+            @include text-64
+
+        p.welcome-description
+            @include text-32
+            margin-top: 32px
+
+        .content-nav
+            margin-top: 32px
+            a
+                @include text-24
+                display: block
+                padding: 16px 0
+
+        div.social-media
+            display: flex
+            margin-left: -16px
+            margin-top: 32px
+            *
+                margin-top: 0
+                margin-left: 16px
+                &:first-child
+                    margin: 0
+                button
+                    width: 64px
+                    height: 64px
+                    &::after
+                        font-size: 40px
+                        line-height: 40px
+                    &::before:hover
+                        width: 64px
+                        height: 64px
+
+@media screen and ( min-width: 1440px ) // 大屏电脑
     .content
         padding: 96px
 
-        h1
+        h1.welcome-headline
             @include text-96
 
-        p
+        p.welcome-description
             @include text-40
             margin-top: 32px
-            max-width: 693px
 
         .content-nav
             margin-top: 48px
             a
                 display: block
                 padding: 16px 0
-                margin-top: 16px
                 &:first-child
                     margin-top: 0
 
