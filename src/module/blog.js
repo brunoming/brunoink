@@ -8,9 +8,8 @@ class BlogList extends React.Component {
     return <NavLink
               className="blog-list-container"
               to={this.props.url}
-              activeStyle={{
-                backgroundColor: '$white-bg'
-              }}><li className="blog-list">
+              activeClassName="active">
+                <li className="blog-list">
       <h2 className="blog-list-headline">{this.props.title}</h2>
       <p className="blog-list-date">{this.props.date}</p>
     </li></NavLink>
@@ -25,7 +24,7 @@ class BlogContent extends React.Component {
 
   render() {
     return this.state.blogContent.map( blogListItem => (
-        <BlogList title={blogListItem.title} date={blogListItem.date} url={"/brunoink/blog/article/" + blogListItem.url}></BlogList>
+        <BlogList title={blogListItem.title} date={blogListItem.date} url={"/blog/article/" + blogListItem.url}></BlogList>
       ));
     }
     /* const bloglistItem = []

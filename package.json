@@ -1,5 +1,5 @@
 {
-  "homepage": "http://brunoming.github.io/brunoink",
+  "homepage": "https://brunodai.com",
   "name": "brunoink",
   "version": "0.1.0",
   "private": false,
@@ -59,6 +59,7 @@
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.1",
+    "react-tooltip": "^4.2.7",
     "react-transition-group": "^4.4.1",
     "react-zdog": "^1.0.11",
     "resolve": "1.15.0",
@@ -75,8 +76,7 @@
     "webpack": "4.42.0",
     "webpack-dev-server": "3.10.3",
     "webpack-manifest-plugin": "2.2.0",
-    "workbox-webpack-plugin": "4.3.1",
-    "zdog": "^1.1.2"
+    "workbox-webpack-plugin": "4.3.1"
   },
   "scripts": {
     "start": "react-scripts start",

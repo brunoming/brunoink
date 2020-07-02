@@ -1,6 +1,6 @@
 import React from 'react';
 import '../style/notfound.sass'
-import Button from '../component/button'
+import { Button } from '../component/button'
 
 class Notfound extends React.Component {
   constructor() {
@@ -16,7 +16,7 @@ class Notfound extends React.Component {
         <Button
             className="secondary-light xxl icon-right"
             text="Back to Home"
-            href="/brunoink">
+            href="/">
         </Button>
         </div>
 ;

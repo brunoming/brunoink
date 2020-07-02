@@ -1,11 +1,11 @@
 import React from 'react';
 import Markdown from 'react-markdown'
 import '../style/blog-article.sass'
-import { useLocation } from 'react-router-dom'
+import { Router, Route, useLocation, withRouter } from 'react-router-dom'
 
-class BlogArticleMain extends React.Component {
+class BlogArticleMain extends React.PureComponent {
 
-    constructor(){
+    constructor() {
         super()
         this.state = {
             markdown: ''
@@ -15,29 +15,39 @@ class BlogArticleMain extends React.Component {
     render() {
         const { markdown } = this.state;
         return (
-            <Markdown source={markdown}></Markdown> // 渲染获取的 markdown 文档
+            <div>
+                <Markdown source={markdown}></Markdown>
+            </div>
+           
         );
     }
 
-    componentDidMount(){
-        const articlePath = require('../data/blog/' + this.props.source + '.md') // 传递 props 中的 md 路径
+    componentWillMount() { // 初始化时执行
+        const articlePath = require('../data/blog/' + this.props.url + '.md') // 传递 props 中的 md 路径
         fetch(articlePath)
             .then(res => res.text())
             .then(text => this.setState({ markdown: text }));
     }
 
+    componentDidUpdate() { // 更新时执行
+        const articlePath = require('../data/blog/' + this.props.url + '.md') // 传递 props 中的 md 路径
+        fetch(articlePath)
+            .then(res => res.text())
+            .then(text => this.setState({ markdown: text }));
+    }
 }
 
-class BlogArticle extends React.Component {
+class BlogArticle extends React.PureComponent {
     constructor() {
         super();
     }
 
     render() {
+        const { params } = this.props.match;
         return (
             <div className="blog-article">
-                <article className="blog-article-container">
-                    <BlogArticleMain source={this.props.url}></BlogArticleMain>
+                <article className="blog-article-container" data-aos="fade-up">
+                    <BlogArticleMain url={params.source}></BlogArticleMain>
                 </article>
             </div>
         )
@@ -45,4 +55,4 @@ class BlogArticle extends React.Component {
 
 }
 
-export default BlogArticle;
+export default withRouter(BlogArticle);

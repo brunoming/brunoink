@@ -11,7 +11,7 @@ class Backindex extends React.Component {
   }
 
   render() {
-    return <NavLink to="/brunoink" className="backindex">Back</NavLink>;
+    return <NavLink to="/" className="backindex">Back</NavLink>;
   }
 
   componentDidMount() {
