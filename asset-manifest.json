@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/brunoink/static/css/main.d8cd2b07.chunk.css",
-    "main.js": "/brunoink/static/js/main.3d2bd8ed.chunk.js",
-    "main.js.map": "/brunoink/static/js/main.3d2bd8ed.chunk.js.map",
+    "main.css": "/brunoink/static/css/main.df7a3381.chunk.css",
+    "main.js": "/brunoink/static/js/main.fd84c159.chunk.js",
+    "main.js.map": "/brunoink/static/js/main.fd84c159.chunk.js.map",
     "runtime-main.js": "/brunoink/static/js/runtime-main.c8a6437c.js",
     "runtime-main.js.map": "/brunoink/static/js/runtime-main.c8a6437c.js.map",
     "static/css/2.d6881df9.chunk.css": "/brunoink/static/css/2.d6881df9.chunk.css",
-    "static/js/2.0775c646.chunk.js": "/brunoink/static/js/2.0775c646.chunk.js",
-    "static/js/2.0775c646.chunk.js.map": "/brunoink/static/js/2.0775c646.chunk.js.map",
+    "static/js/2.e0317924.chunk.js": "/brunoink/static/js/2.e0317924.chunk.js",
+    "static/js/2.e0317924.chunk.js.map": "/brunoink/static/js/2.e0317924.chunk.js.map",
     "index.html": "/brunoink/index.html",
-    "precache-manifest.c7d38b4950b48b5deae5d79602df5ae6.js": "/brunoink/precache-manifest.c7d38b4950b48b5deae5d79602df5ae6.js",
+    "precache-manifest.6133ef57f15c4543dcfd3714f2041486.js": "/brunoink/precache-manifest.6133ef57f15c4543dcfd3714f2041486.js",
     "service-worker.js": "/brunoink/service-worker.js",
     "static/css/2.d6881df9.chunk.css.map": "/brunoink/static/css/2.d6881df9.chunk.css.map",
-    "static/css/main.d8cd2b07.chunk.css.map": "/brunoink/static/css/main.d8cd2b07.chunk.css.map",
-    "static/js/2.0775c646.chunk.js.LICENSE.txt": "/brunoink/static/js/2.0775c646.chunk.js.LICENSE.txt",
+    "static/css/main.df7a3381.chunk.css.map": "/brunoink/static/css/main.df7a3381.chunk.css.map",
+    "static/js/2.e0317924.chunk.js.LICENSE.txt": "/brunoink/static/js/2.e0317924.chunk.js.LICENSE.txt",
     "static/media/all.css": "/brunoink/static/media/fa-solid-900.f3a7d3b5.woff",
     "static/media/test1.md": "/brunoink/static/media/test1.d468d607.md",
     "static/media/test2.md": "/brunoink/static/media/test2.bc655494.md",
@@ -24,8 +24,8 @@
   "entrypoints": [
     "static/js/runtime-main.c8a6437c.js",
     "static/css/2.d6881df9.chunk.css",
-    "static/js/2.0775c646.chunk.js",
-    "static/css/main.d8cd2b07.chunk.css",
-    "static/js/main.3d2bd8ed.chunk.js"
+    "static/js/2.e0317924.chunk.js",
+    "static/css/main.df7a3381.chunk.css",
+    "static/js/main.fd84c159.chunk.js"
   ]
 }
