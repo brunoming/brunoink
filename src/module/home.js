@@ -9,7 +9,7 @@ class Home extends React.Component {
   render() {
     return <div className="content">
     <h1 className="welcome-headline" data-aos="fade-in" data-aos-delay="0">Hi, Here is Bruno</h1>
-    <p className="welcome-description" data-aos="fade-in" data-aos-delay="100">I'm an UE Designer, Web Designer and Coder. <span class="sub">Now being employed in a Chinese technology corporation, managing the system of design. Moreover, React and Sketch Plugin Development are also what I am currently involving with.</span></p>
+    <p className="welcome-description" data-aos="fade-in" data-aos-delay="100">I'm an UE Designer, Web Designer and Coder. <span className="sub">Now being employed in a Chinese technology corporation, managing the system of design. Moreover, React and Sketch Plugin Development are also what I am currently involving with.</span></p>
     <div className="content-nav">
       <Link data-aos="fade-in" data-aos-delay="200" to="" type="" text="Portfolio (Coming Soon)" className="icon-right text-32 disabled" title="Coming Soon..">Portfolio (Coming Soon)</Link>
       <Link data-aos="fade-in" data-aos-delay="250" to="/blog" type="" text="Blog" className="icon-right text-32">Blog</Link>

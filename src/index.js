@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.sass';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
 import "@fortawesome/fontawesome-free/css/all.css"; // FontAwesome
+/* 
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 
@@ -11,7 +13,7 @@ AOS.init({
   once: true,
   duration: 800,
 });
-
+ */
 ReactDOM.render(
   <React.StrictMode>
     <App />

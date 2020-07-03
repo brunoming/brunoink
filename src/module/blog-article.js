@@ -1,7 +1,8 @@
 import React from 'react';
 import Markdown from 'react-markdown'
 import '../style/blog-article.sass'
-import { Router, Route, useLocation, withRouter } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
+import { Button, CloseButton } from '../component/button'
 
 class BlogArticleMain extends React.PureComponent {
 
@@ -15,10 +16,11 @@ class BlogArticleMain extends React.PureComponent {
     render() {
         const { markdown } = this.state;
         return (
-            <div>
-                <Markdown source={markdown}></Markdown>
-            </div>
-           
+                <Markdown
+                    source={markdown}
+                    transformImageUri={uri =>
+                        uri.startsWith("http") ? uri : `${process.env.REACT_IMAGE_BASE_URL}${uri}`
+                      }/>
         );
     }
 
@@ -38,20 +40,26 @@ class BlogArticleMain extends React.PureComponent {
 }
 
 class BlogArticle extends React.PureComponent {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
+        this.state = {
+            title: '',
+            type: '',
+            date: '',
+        }
     }
 
     render() {
         const { params } = this.props.match;
         return (
             <div className="blog-article">
-                <article className="blog-article-container" data-aos="fade-up">
-                    <BlogArticleMain url={params.source}></BlogArticleMain>
+                <article className="blog-article-container">
+                <BlogArticleMain url={params.source}></BlogArticleMain>
                 </article>
             </div>
         )
     }
+
 
 }
 

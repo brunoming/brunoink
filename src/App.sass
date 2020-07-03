@@ -1,6 +1,7 @@
 @import "./style/_color"
 @import "./style/_typography"
-    
+@import "./style/_responsive"
+
 main
     display: flex
     min-width: 100vw
@@ -16,12 +17,13 @@ main
 .app-right
     min-width: 60vw
     height: 100vh
-    overflow: scroll
-    position: sticky
-    top: 0
     background-color: $theme-color
 
-@media screen and ( max-width: 734px ) and (min-width: 0px) // 移动端
+.app-content
+    z-index: 1
+    background-color: $grey-9
+
+@include mobile
 
     .app-right
         display: none
@@ -37,8 +39,29 @@ main
                 display: block
                 padding: 16px 0
 
+    .app-content
+        width: 100vw
+        min-height: calc(100vh - 32px)
+        overflow: scroll
+        position: fixed
+        top: 32px
+        right: 0
+        border-radius: 24px 24px 0 0
+        background-color: $grey-9
 
-@media screen and ( max-width: 1440px ) and ( min-width: 735px ) // 小屏电脑
+        .close-button
+            position: fixed
+            right: 16px
+            top: 48px
+            z-index: 3
+
+    .app-content.hide
+        display: none
+        opacity: 0
+
+
+@include tablet
+
     .content
         padding: 48px
 
@@ -49,7 +72,22 @@ main
                 display: block
                 padding: 16px 0
 
-@media screen and ( min-width: 1440px ) // 大屏电脑
+    .app-content
+        width: 60vw
+        max-height: 100vh
+        overflow: scroll
+        position: fixed
+        top: 0
+        right: 0
+
+        .close-button
+            position: fixed
+            right: 16px
+            top: 16px
+            z-index: 3
+
+@include desktop
+
     .content
         padding: 96px
 
@@ -60,3 +98,32 @@ main
                 padding: 16px 0
                 &:first-child
                     margin-top: 0
+
+    .app-content
+        width: 60vw
+        max-height: 100vh
+        overflow: scroll
+        position: fixed
+        top: 0
+        right: 0
+        .close-button
+            position: fixed
+            right: 32px
+            top: 32px
+            z-index: 3
+
+/* 动画相关样式 */
+
+.fade-enter
+   opacity: 0
+
+.fade-exit
+   opacity: 1
+
+.fade-enter-active
+   opacity: 1
+   transition: opacity .3s
+
+.fade-exit-active
+   opacity: 0
+   transition: opacity .3s

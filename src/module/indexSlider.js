@@ -12,13 +12,13 @@ class IndexSlider extends React.Component {
     }
 
     render() {
-        return <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide slide-1">
+        return <div className="swiper-container">
+            <div className="swiper-wrapper">
+                <div className="swiper-slide slide-1">
                 </div>
-                <div class="swiper-slide slide-2">
+                <div className="swiper-slide slide-2">
                 </div>
-                <div class="swiper-slide slide-3">
+                <div className="swiper-slide slide-3">
                 </div>
             </div>
         </div>;

@@ -64,8 +64,8 @@ button.tertiary-light
         background-color: transparent
 
     &:hover:before
-        width: 96px
-        height: 96px
+        width: 150%
+        height: 150%
         background-color: $white-bg
 
     &:active
@@ -125,8 +125,6 @@ button.icon-right.md
 button.icon-right.sm
     padding-right: 16px
 
-
-
 // 社交媒体专用按钮
 
 button.social-media
@@ -134,9 +132,6 @@ button.social-media
     height: 96px
     padding: 0
     transition: all .3s ease
-    &:hover
-        &:after
-            transform: scale(1.1)
     &:after
         font-size: 48px
         line-height: 48px
@@ -157,6 +152,24 @@ button.social-media.envelop
 button.social-media.weixin
     &:after
         content: "\f1d7"
+
+// Close Button
+
+.close-button
+    button
+        width: 48px
+        height: 48px
+        &:after
+            width: 32px
+            font-size: 32px
+            line-height: 32px
+            font-family: "Font Awesome 5 Brands", "Font Awesome 5 Free"
+            display: inline-flex
+            align-items: center
+            text-align: center
+            position: relative
+            transition: all .3s ease-in-out
+            content: "\f00d"
 
 // Popover
 
