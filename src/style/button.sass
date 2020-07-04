@@ -57,7 +57,6 @@ button.tertiary-light
         top: center
         width: 0
         height: 0
-        background: red
         border-radius: 88rem
         z-index: 1
         transition: all .6s ease
@@ -70,6 +69,29 @@ button.tertiary-light
 
     &:active
         background-color: $white-light-bg
+
+button.tertiary-dark
+    background-color: transparent
+    color: $black-secondary
+    &:hover
+        color: $black-main
+    &:before
+        content: ''
+        position: absolute
+        left: center
+        top: center
+        width: 0
+        height: 0
+        border-radius: 88rem
+        z-index: 1
+        transition: all .6s ease
+        background-color: transparent
+    &:hover:before
+        width: 150%
+        height: 150%
+        background-color: $black-bg
+    &:active
+        background-color: $black-light-bg
 
 // 按钮尺寸 xl / lg / md / sm 
 
@@ -168,8 +190,10 @@ button.social-media.weixin
             align-items: center
             text-align: center
             position: relative
-            transition: all .3s ease-in-out
+            transition: all .3s ease
             content: "\f00d"
+        &:hover:after
+            transform: rotate(90deg)
 
 // Popover
 

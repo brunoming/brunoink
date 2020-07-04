@@ -1,0 +1,33 @@
+.fade-enter
+    opacity: 0
+
+.fade-exit
+    opacity: 1
+
+.fade-enter-active
+    opacity: 1
+    transition: opacity .3s ease-in-out
+
+.fade-exit-active
+    opacity: 0
+    transition: opacity .3s ease-in-out
+
+// AppContent 动画类
+
+.app-content-fade-enter
+    transform: translateY(300px) 
+    opacity: 0
+
+.app-content-fade-exit
+    transform: translateY(0px) 
+    opacity: 1
+
+.app-content-fade-enter-active
+    transform: translateY(0px) 
+    opacity: 1
+    transition: all .6s ease-in-out
+
+.app-content-fade-exit-active
+    transform: translateY(300px) 
+    opacity: 0
+    transition: all .6s ease-in-out

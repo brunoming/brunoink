@@ -1,19 +1,20 @@
-[{
+[
+    {
+        "title": "组件构建 - Close Button",
+        "date": "July 5,2020",
+        "type": "React 学习记录",
+        "url": "react-study-back-button"
+    },
+    {
+        "title": "组件构建 - Sass 和 Props",
+        "date": "July 4,2020",
+        "type": "React 学习记录",
+        "url": "react-study-sass-props"
+    },
+    {
         "title": "起步搭建",
         "date": "July 3,2020",
         "type": "React 学习记录",
-        "url": "react-study-2020-7-3"
-    },
-    {
-        "title": "Test 2",
-        "date": "Jan 1,2020",
-        "type": "Blog",
-        "url": "test2"
-    },
-    {
-        "title": "Test 3",
-        "date": "Jan 1,2020",
-        "type": "Blog",
-        "url": "test3"
+        "url": "react-study-start"
     }
 ]

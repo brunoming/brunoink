@@ -8,7 +8,7 @@ class CloseButton extends React.PureComponent {
     render() {
         return <Link className="button-link close-button" to={this.props.href} target={this.props.target}>
                 <button
-                    className={"tertiary-light"}
+                    className={this.props.className}
                     style={this.props.style}
                     title={this.props.title}>
                     <span>

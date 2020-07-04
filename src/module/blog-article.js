@@ -2,40 +2,51 @@ import React from 'react';
 import Markdown from 'react-markdown'
 import '../style/blog-article.sass'
 import { withRouter } from 'react-router-dom'
-import { Button, CloseButton } from '../component/button'
+import hljs from 'highlight.js/lib/core';
+import javascript from 'highlight.js/lib/languages/javascript';
+
+hljs.registerLanguage('javascript', javascript);
 
 class BlogArticleMain extends React.PureComponent {
 
-    constructor() {
-        super()
+    constructor(props) { // 初始化
+        super(props)
+
         this.state = {
-            markdown: ''
+            markdown: '',
+            opacity: 1,
+            transition: 'all 0.6s ease-in-out'
         }
+
+        const articlePath = require('../data/blog/' + this.props.url + '.md') // 传递 props 中的 md 路径
+        fetch(articlePath)
+            .then(res => res.text())
+            .then(text => this.setState({ markdown: text }));
     }
 
     render() {
         const { markdown } = this.state;
         return (
+            <div style={{
+                opacity: this.state.opacity,
+                transition: this.state.transition
+            }}>
                 <Markdown
                     source={markdown}
-                    transformImageUri={uri =>
-                        uri.startsWith("http") ? uri : `${process.env.REACT_IMAGE_BASE_URL}${uri}`
-                      }/>
+                />
+            </div>
         );
     }
 
-    componentWillMount() { // 初始化时执行
-        const articlePath = require('../data/blog/' + this.props.url + '.md') // 传递 props 中的 md 路径
-        fetch(articlePath)
-            .then(res => res.text())
-            .then(text => this.setState({ markdown: text }));
+    componentDidMount() { // 更新时执行
     }
 
-    componentDidUpdate() { // 更新时执行
+    componentDidUpdate(){
         const articlePath = require('../data/blog/' + this.props.url + '.md') // 传递 props 中的 md 路径
         fetch(articlePath)
             .then(res => res.text())
             .then(text => this.setState({ markdown: text }));
+        hljs.registerLanguage('javascript', javascript);
     }
 }
 
@@ -55,6 +66,9 @@ class BlogArticle extends React.PureComponent {
             <div className="blog-article">
                 <article className="blog-article-container">
                 <BlogArticleMain url={params.source}></BlogArticleMain>
+{/*                 <div className="article-contact">
+                <a href="mailto:brunoming1996@gmail.com" style={{display: 'block', marginTop: '48px'}}>通过邮件联系 Bruno</a>
+                </div> */}
                 </article>
             </div>
         )

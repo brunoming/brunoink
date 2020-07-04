@@ -1,5 +1,6 @@
 @import typography
 @import color
+@import responsive
     
 .content
     width: 100%
@@ -11,8 +12,7 @@
 span.sub
     color: $white-tertiary
 
-
-@media screen and ( max-width: 734px ) and (min-width: 0px) // 移动端
+@include mobile
 
     .content
 
@@ -33,15 +33,28 @@ span.sub
 
         div.social-media
             display: flex
-            margin-left: -24px
+            margin-left: -8px
             margin-top: 48px
             *
+                margin-left: 16px
                 margin-top: 0
                 &:first-child
                     margin: 0
 
+                button
+                    margin-left: 16px
+                    width: 64px
+                    height: 64px
+                    &::after
+                        font-size: 48px
+                        line-height: 48px
+                    &::before:hover
+                        width: 64px
+                        height: 64px
 
-@media screen and ( max-width: 1440px ) and ( min-width: 735px ) // 小屏电脑
+
+@include tablet 
+
     .content
 
         h1.welcome-headline
@@ -54,7 +67,7 @@ span.sub
         .content-nav
             margin-top: 32px
             a
-                @include text-24
+                @include text-32
                 display: block
                 padding: 16px 0
 
@@ -65,8 +78,10 @@ span.sub
             *
                 margin-top: 0
                 margin-left: 16px
+
                 &:first-child
                     margin: 0
+
                 button
                     width: 64px
                     height: 64px
@@ -77,19 +92,21 @@ span.sub
                         width: 64px
                         height: 64px
 
-@media screen and ( min-width: 1440px ) // 大屏电脑
+@include desktop
+
     .content
 
         h1.welcome-headline
             @include text-96
 
         p.welcome-description
-            @include text-40
+            @include text-48
             margin-top: 32px
 
         .content-nav
             margin-top: 48px
             a
+                @include text-48
                 display: block
                 padding: 16px 0
                 &:first-child

@@ -1,11 +1,10 @@
 @import typography
 @import color
+@import responsive
 
 a
     font-weight: 600
     text-decoration: none
-    &:active
-        opacity: 0.9
 
 a.icon-right
     &:after
@@ -25,32 +24,6 @@ a.icon-right
 a.button-link
     &:after
         display: none
-    
-a.text-24
-    &:after
-        left: 8px
-
-
-a.text-20
-    &:after
-        left: 8px
-    &:hover
-        &:after
-            left: 16px
-
-a.text-16
-    &:after
-        left: 8px
-    &:hover
-        &:after
-            left: 8px
-
-a.text-14
-    &:after
-        left: 8px
-    &:hover
-        &:after
-            left: 8px
 
 a.disabled
     color: $white-disabled
@@ -59,3 +32,24 @@ a.disabled
         cursor: not-allowed
     &:after
         display: none
+
+@include mobile
+    a.navlink
+        &:after
+            left: 8px
+        &:hover::after
+            left: 16px
+
+@include tablet
+    a.navlink
+        &:after
+            left: 8px
+        &:hover::after
+            left: 16px
+
+@include desktop
+    a.navlink
+        &:after
+            left: 16px
+        &:hover::after
+            left: 24px
