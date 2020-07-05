@@ -22,7 +22,6 @@ main
     width: 100vw
     height: 100vh
     overflow: hidden
-    background-color: $theme-color
     pointer-events: none
 
 .app-content
@@ -43,7 +42,6 @@ main
         background-color: $black-secondary
 
     .content
-        position: relative
         padding: 48px 32px 96px 32px
 
     .app-content
@@ -56,9 +54,9 @@ main
         border-radius: 24px 24px 0 0
 
         .close-button
-            position: fixed
+            position: absolute
             right: 16px
-            top: 48px
+            top: 16px
             z-index: 101
 
     .app-content.hide

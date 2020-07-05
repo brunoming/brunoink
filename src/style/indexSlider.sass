@@ -1,3 +1,6 @@
+@import typography
+@import color
+
 .swiper-wrapper
     width: 100%
 
@@ -13,15 +16,30 @@
     background-size: cover
     background-position: center
     background-repeat: no-repeat
+    .description
+        @include text-14
+        position: absolute
+        right: 16px
+        bottom: 16px
+        color: $white-tertiary
+        text-shadow: 0 0 4px 0 $black-main
 
 .slide-1
-    background-color: #0586E1
-    background-image: url('../img/welcome-bg-1.jpg')
+    background-color: #098AE5
+    background-image: url('/asset/index-slider/welcome-bg-1.jpg')
 
 .slide-2
-    background-color: #5B81A9
-    background-image: url('../img/welcome-bg-2.jpg')
+    background-color: #BA9B6a
+    background-image: url('/asset/index-slider/welcome-bg-2.jpg')
 
 .slide-3
+    background-color: #B27346
+    background-image: url('/asset/index-slider/welcome-bg-3.jpg')
+
+.slide-4
     background-color: #C4A46E
-    background-image: url('../img/welcome-bg-3.jpg')
+    background-image: url('/asset/index-slider/welcome-bg-4.jpg')
+
+.slide-5
+    background-color: #6B839f
+    background-image: url('/asset/index-slider/welcome-bg-5.jpg')

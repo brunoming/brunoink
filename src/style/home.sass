@@ -33,21 +33,20 @@ span.sub
 
         div.social-media
             display: flex
-            margin-left: -8px
+            margin-left: -12px
             margin-top: 48px
-            *
-                margin-left: 16px
-                margin-top: 0
+            
+            .button-container 
+                margin-left: 8px
                 &:first-child
                     margin: 0
 
                 button
-                    margin-left: 16px
                     width: 64px
                     height: 64px
                     &::after
-                        font-size: 48px
-                        line-height: 48px
+                        font-size: 40px
+                        line-height: 40px
                     &::before:hover
                         width: 64px
                         height: 64px
@@ -75,10 +74,8 @@ span.sub
             display: flex
             margin-left: -16px
             margin-top: 32px
-            *
-                margin-top: 0
-                margin-left: 16px
-
+            .button-container 
+                margin-left: 8px
                 &:first-child
                     margin: 0
 
@@ -108,7 +105,7 @@ span.sub
             a
                 @include text-48
                 display: block
-                padding: 16px 0
+                padding: 24px 0
                 &:first-child
                     margin-top: 0
 
@@ -116,7 +113,3 @@ span.sub
             display: flex
             margin-left: -24px
             margin-top: 64px
-            *
-                margin-top: 0
-                &:first-child
-                    margin: 0

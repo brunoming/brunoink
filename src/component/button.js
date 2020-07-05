@@ -1,6 +1,5 @@
 import React from 'react';
 import '../style/button.sass'
-import ReactTooltip from 'react-tooltip';
 import { Link } from 'react-router-dom'
 
 class CloseButton extends React.PureComponent {
@@ -21,6 +20,13 @@ class CloseButton extends React.PureComponent {
 
 class QRCodeButton extends React.PureComponent {
 
+    constructor(props){
+        super(props)
+        this.state = {
+            tooltipOpacity: 0 
+        }
+    }
+
     render() {
         return <div data-clickable={true} data-tip = {"<img src='" + require('../img/wechat-qrcode.png') + "'/>"} data-class={'popover'} data-effect={'solid'} data-place={'top'} data-type={'light'} data-html={true} className="button-container">
             <a className="button-link" href={this.props.href} target={this.props.target}>
@@ -33,7 +39,6 @@ class QRCodeButton extends React.PureComponent {
                     </span>
                 </button>
             </a>
-            <ReactTooltip />
         </div>
     };
 }
@@ -52,7 +57,6 @@ class Button extends React.PureComponent {
                     </span>
                 </button>
             </a>
-            <ReactTooltip/>
         </div>
     };
 

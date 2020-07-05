@@ -30,7 +30,7 @@ class BlogContent extends React.Component {
   render() {
 
     return this.state.blogContent.map(blogListItem => (
-      <BlogList title={blogListItem.title} date={blogListItem.date} type={blogListItem.type} url={"/blog/article/" + blogListItem.url}></BlogList>
+      <BlogList data-aos="fade-up" title={blogListItem.title} date={blogListItem.date} type={blogListItem.type} url={"/blog/article/" + blogListItem.url}></BlogList>
     ));
   }
 

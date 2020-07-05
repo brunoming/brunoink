@@ -14,16 +14,17 @@ import { CloseButton } from './component/button'
 import IndexSlider from './module/indexSlider'
 import BlogArticle from './module/blog-article'
 import { TouchBallLoading } from 'react-loadingg';
+import ReactTooltip from 'react-tooltip'
 
-/* var clientWidth = document.documentElement.clientWidth // 根据设备宽度判断引用移动端 或 desktop转场
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
-console.log(clientWidth)
+AOS.init({
+  once: true,
+  duration: 800,
+});
 
-if (clientWidth > 735) {
-  require('./style/_transition-group.sass')
-} else if ( clientWidth <= 735 ) {
-  require('./style/_transition-group-mobile.sass')
-} */
+// var clientWidth = document.documentElement.clientWidth // 获取可视范围宽度
 
 function AppLeft() {
   let location = useLocation();
@@ -60,7 +61,9 @@ function AppContent() { // 渲染 AppContent 内的内容
   let location = useLocation()
   console.log(location.pathname.split('/').slice(0,2).join('/'))
   return <div className="app-content">
-    <CloseButton className="tertiary-dark" href={location.pathname.split('/').slice(0,2).join('/')}></CloseButton>
+    <div className="app-content-header">
+      <CloseButton className="tertiary-dark" href={location.pathname.split('/').slice(0,2).join('/')}></CloseButton>
+    </div>
     <SwitchTransition>
       <CSSTransition
         key={location.pathname}
@@ -102,6 +105,7 @@ export default class App extends React.Component {
           <AppLeft />
           <AppRight />
           <AppContentSwitch />
+          <ReactTooltip />
         </BrowserRouter>
       </main>
     );

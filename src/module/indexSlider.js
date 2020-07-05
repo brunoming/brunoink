@@ -3,31 +3,43 @@ import Swiper from "swiper";
 import "swiper/css/swiper.css";
 import "../style/indexSlider.sass";
 
-class IndexSlider extends React.Component {
-    constructor() {
-        super();
+class SlideItem extends React.Component {
+
+    constructor(props){
+        super(props)
         this.state = {
-            someKey: 'someValue'
-        };
+            slideNumber: this.props.slideNumber,
+            description: this.props.description
+        }
+    }
+
+    render(){
+        return <div className={"swiper-slide slide-" + this.state.slideNumber}>
+            <span className="description">{this.state.description}</span>
+        </div>
+    }
+
+}
+
+class IndexSlider extends React.Component {
+
+    constructor(){
+        super()
     }
 
     render() {
         return <div className="swiper-container">
             <div className="swiper-wrapper">
-                <div className="swiper-slide slide-1">
-                </div>
-                <div className="swiper-slide slide-2">
-                </div>
-                <div className="swiper-slide slide-3">
-                </div>
+                <SlideItem slideNumber="1" description="Picture here in 2018, Kamakura, Japan"></SlideItem>
+                <SlideItem slideNumber="2" description="Picture here in 2019, Pulau Langkawi, Malaysia"></SlideItem>
+                <SlideItem slideNumber="3" description="Picture here in 2019, Pulau Langkawi, Malaysia"></SlideItem>
+                <SlideItem slideNumber="4" description="Picture here in 2020, Guangdong, China"></SlideItem>
+                <SlideItem slideNumber="5" description="Picture here in 2018, Pokhara, Nepal"></SlideItem>
             </div>
         </div>;
     }
 
     componentDidMount() {
-        this.setState({
-            someKey: 'otherValue'
-        });
         var swiper = new Swiper('.swiper-container', {
             fadeEffect: {
               crossFade: true
