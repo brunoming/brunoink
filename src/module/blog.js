@@ -23,15 +23,20 @@ class BlogList extends React.Component {
 
 class BlogContent extends React.Component {
 
-  state = {
-    blogContent: require('../data/blog/blog-content.json')
+  constructor() {
+    super()
+    this.state = {
+      blogContent: require('../data/blog/blog-content.json'),
+      blogListCount: 0
+    }
+
   }
 
   render() {
 
     return this.state.blogContent.map(blogListItem => (
-      <BlogList data-aos="fade-up" title={blogListItem.title} date={blogListItem.date} type={blogListItem.type} url={"/blog/article/" + blogListItem.url}></BlogList>
-    ));
+        <BlogList data-aos="fade-up" title={blogListItem.title} date={blogListItem.date} type={blogListItem.type} url={"/blog/article/" + blogListItem.url}></BlogList>
+      ));
   }
 
 }
